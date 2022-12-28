@@ -1,0 +1,15 @@
+{
+
+  "description": "Blocks websites under example.org",
+  "manifest_version": 2,
+  "name": "Blocker",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.example.com/*"],
+      "js": ["blocker.js"]
+    }
+  ]
+
+}
