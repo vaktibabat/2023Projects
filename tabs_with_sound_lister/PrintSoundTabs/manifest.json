@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Tasoundrint",
+  "version": "1.0",
+  "description": "An extension that prints a list of all the tabs that have sound",
+  "icons": {
+    "48": "icons/sound-list.png",
+    "96": "icons/sound-list@2x.png"
+  },
+
+  "permissions": [
+    "tabs"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/star-empty-38.png",
+    "default_title": "Print the List",
+    "default_popup": "popup/show_list.html"
+  },
+
+  "permissions": [
+      "<all_urls>",
+      "tabs"
+  ]
+}
